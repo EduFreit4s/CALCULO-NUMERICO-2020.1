@@ -1,14 +1,14 @@
 % ---------------------------------------------
-% INSTITUTO FEDERAL DA PARAÕBA
-% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL…TRICA
-% DISCIPLINA: C¡LCULO NUM…RICO 2020
-% INTERPOLACAO: M…TODO DE NEWTON
-% JO√O PESSOA, 08/10/2020.
-% AUTOR: JOS… EDUARDO F BATISTA
+% INSTITUTO FEDERAL DA PARA√çBA
+% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL√âTRICA
+% DISCIPLINA: C√ÅLCULO NUM√âRICO 2020
+% INTERPOLACAO: M√âTODO DE NEWTON
+% JO√ÉO PESSOA, 08/10/2020.
+% AUTOR: JOS√â EDUARDO F BATISTA
 % ---------------------------------------------
 
 % VARIAVEIS PRINCIPAIS
-% abscissa - Retorna a imagem do polinÙmio interpolado 
+% abscissa - Retorna a imagem do polin√¥mio interpolado 
 % x - vetor que contem as abscissas dos pontos dados
 % y - vetor que contem as ordenadas dos pontos dados
 % fx - vetor que contem as abscissas dos pontos interpolados
@@ -20,10 +20,10 @@ clear all, close all, clc
 abscissa = 25;
 x =[0 8 20 30 45];
 y =[0.000 52.032 160.450 275.961 370.276];
-passo = 0:0.01:45;
+passo = 0:1:45;
 ordenada=0;
 
-% N√O MEXER
+% N√ÉO MEXER
 size = length(x);
 fator = 1;
 dx = length(passo);
@@ -51,17 +51,17 @@ for p=1:dx
 end
 
 format short
-% SAÕDA NA JANELA DE COMANDO
+% SA√çDA NA JANELA DE COMANDO
 %-------------------------------------------------------------
 fprintf("%s \n\n\n", '        INTERPOLACAO DE NEWTON');
 fprintf("%s \n\n", '        TABELA DE PONTOS');
 disp([x' y']);
 fprintf("\n    F(%.2f) =  %.2f\n\n",abscissa,ordenada);
 fprintf("%s \n\n", '         TABELA DE RESULTADOS ');
-fprintf("%s \n\n", '     ITERA«√O     DOMÕNIO    IMAGEM');
+fprintf("%s \n\n", '     ITERA√á√ÉO     DOM√çNIO    IMAGEM');
 disp([it' dominio' fx']);
 
-% SAÕDA NO GR¡FICO
+% SA√çDA NO GR√ÅFICO
 %-------------------------------------------------------------
 Fig=figure(1);
 ax=axes;
