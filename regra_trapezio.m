@@ -12,13 +12,13 @@ tol = 1E-6;
 
   ######### MUDAR LIMITES AQUI #########
   
-    a=0; b=pi/4;
+a=0; b=pi/4;
 %B  a=-2; b=-1;  
 %C  a=-2; b=2;
 
   ######### MUDAR IEXATO AQUI #########
 
-    Iexato = -0.5*log(-2*sqrt(2)+3);     
+Iexato = -0.5*log(-2*sqrt(2)+3);     
 %B  Iexato = (12*(log(2)-log(3))+7)/6;   
 %C  Iexato = (sqrt(pi)*erf(sqrt(2))-sqrt(pi)*erf(-sqrt(2)))/sqrt(2); 
 
@@ -31,7 +31,7 @@ while true
   
   ######### MUDAR FUNÇÃO AQUI #########
   
-    y = (1./cos(x));                     
+y = (1./cos(x));                     
 %B  y = x.^2./((x-1).^2);  
 %C  y = e.^(-x.^2./2);    
   
@@ -41,7 +41,7 @@ while true
   
   ######### MUDAR ERRO DE TRUCAMENTO AQUI #########
   
-    ET = -((b-a)^3/(12*n^2))*(1+sin(pi/4)^2)/cos(pi/4)^3; 
+ET = -((b-a)^3/(12*n^2))*(1+sin(pi/4)^2)/cos(pi/4)^3; 
 %B  ET = -((b-a)^3/(12*n^2))*(2*(2*(-2)+1)/((-2)-1)^4);
 %C  ET = -((b-a)^3/(12*n^2))*3/e^2;
   
