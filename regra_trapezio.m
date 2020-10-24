@@ -4,7 +4,6 @@
 % CÁLCULO NUMÉRICO 2020
 % INTEGRAÇÃO NUMÉRICA - REGRA DOS TRAPÉZIOS
 % JOÃO PESSOA, 24/10/2020.
-% AUTOR: JOSÉ E F BATISTA
 % -----------------------------------------------------
 clear all, close all, clc, 
 
