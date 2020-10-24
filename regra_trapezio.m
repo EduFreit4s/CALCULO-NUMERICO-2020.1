@@ -1,10 +1,10 @@
 % -----------------------------------------------------
-% INSTITUTO FEDERAL DA PARAÕBA
-% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL…TRICA
-% C¡LCULO NUM…RICO 2020
-% INTEGRA«√O NUM…RICA - REGRA DOS TRAP…ZIOS
-% JO√O PESSOA, 24/10/2020.
-% AUTOR: JOS… E F BATISTA
+% INSTITUTO FEDERAL DA PARA√çBA
+% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL√âTRICA
+% C√ÅLCULO NUM√âRICO 2020
+% INTEGRA√á√ÉO NUM√âRICA - REGRA DOS TRAP√âZIOS
+% JO√ÉO PESSOA, 24/10/2020.
+% AUTOR: JOS√â E F BATISTA
 % -----------------------------------------------------
 clear all, close all, clc, 
 
@@ -29,7 +29,7 @@ while true
   h=(b-a)/n;
   x=a:h:b;
   
-  ######### MUDAR FUN«√O AQUI #########
+  ######### MUDAR FUN√á√ÉO AQUI #########
   
     y = (1./cos(x));                     
 %B  y = x.^2./((x-1).^2);  
@@ -52,9 +52,9 @@ while true
   
 end
 
-fprintf("<INTEGRA«√O NUM…RICA - REGRA DOS TRAP…ZIOS>\n\n")
-fprintf("Toler‚ncia: %.11f\n", tol);
+fprintf("<INTEGRA√á√ÉO NUM√âRICA - REGRA DOS TRAP√âZIOS>\n\n")
+fprintf("Toler√¢ncia: %e\n", tol);
 fprintf("Integral exata = %.11f \n", Iexato);
-fprintf("Integral numÈrica = %.11f\nErro de truncamento: %.11f\n\n",soma,ET);
-fprintf("Integral composta = %.11f\nErro |exato-numÈrico| = %.11f\n",Ir,E);
-fprintf("N˙mero de trapÈzios: %i\n", n); 
+fprintf("Integral num√©rica = %.11f\nErro de truncamento: %.11f\n\n",soma,ET);
+fprintf("Integral composta = %.11f\nErro |exato-num√©rico| = %.11f\n",Ir,E);
+fprintf("N√∫mero de trap√©zios: %i\n", n); 
