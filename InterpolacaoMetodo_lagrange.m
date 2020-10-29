@@ -1,9 +1,9 @@
 % ---------------------------------------------
-% INSTITUTO FEDERAL DA PARAÕBA
-% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL…TRICA
-% DISCIPLINA: C¡LCULO NUM…RICO 2020
-% INTERPOLACAO: M…TODO DE LAGRANGE
-% JO√O PESSOA, 26/09/2020.
+% INSTITUTO FEDERAL DA PARA√çBA
+% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL√âTRICA
+% DISCIPLINA: C√ÅLCULO NUM√âRICO 2020
+% INTERPOLACAO: M√âTODO DE LAGRANGE
+% JO√ÉO PESSOA, 26/09/2020.
 % AUTOR: PROF. PAULO HENRIQUE DA FONSECA SILVA
 % ---------------------------------------------
 
@@ -43,14 +43,14 @@ for k=1:NPi
     disp([k x(k) y(k)]);
 end
 
-% SAÕDA GR¡FICA
+% SA√çDA GR√ÅFICA
 Fig=figure(1); 
 ax=axes; 
 a=plot(Xd,Yd,'ko',x,y,'r');
 set(a,'MarkerSize',14,'Linewidth',4);
 L(1)=legend('pontos dados (IBGE)','pontos interpolados');
-title('PopulaÁ„o Brasileira')
-L(2)=xlabel('ANO'); L(3)=ylabel('HAB. (milhıes)');
+title('Popula√ß√£o Brasileira')
+L(2)=xlabel('ANO'); L(3)=ylabel('HAB. (milh√µes)');
 set(L,'fontsize',35);set(ax,'fontsize',30); 
 set(L(1),'Box','Off','Location','NorthWest','fontsize',25);
 
