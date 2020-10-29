@@ -1,15 +1,19 @@
 % -----------------------------------------------------
-% INSTITUTO FEDERAL DA PARAÕBA
-% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL…TRICA
-% C¡LCULO NUM…RICO 2020
-% INTEGRA«√O NUM…RICA - REGRA DOS TRAP…ZIOS
-% JO√O PESSOA, 24/10/2020.
+% INSTITUTO FEDERAL DA PARA√çBA
+% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL√âTRICA
+% C√ÅLCULO NUM√âRICO 2020
+% INTEGRA√á√ÉO NUM√âRICA - REGRA DOS TRAP√âZIOS
+% JO√ÉO PESSOA, 24/10/2020.
+% AUTOR: JOS√â E F BATISTA
 % -----------------------------------------------------
+
+% CALCULA O NUMERO DE TRAPEZIOS NECESSARIOS PARA INTEGRAL NUMERICA CONVERGIR PARA O VALOR EXATO NA PRECISAO DEFINIDA %  
+
 clear all, close all, clc, 
 
 tol = 1E-6; 
 
-%%% LIMITES DE INTEGRA«√O
+%%% LIMITES DE INTEGRA√á√ÉO
   
 a=0; b=pi/4;
 %B  a=-2; b=-1;  
@@ -28,7 +32,7 @@ while true
   h=(b-a)/n;
   x=a:h:b;
   
-%%% FUN«√O 
+%%% FUN√á√ÉO 
   
 y = (1./cos(x));                     
 %B  y = x.^2./((x-1).^2);  
@@ -51,9 +55,9 @@ ET = -((b-a)^3/(12*n^2))*(1+sin(pi/4)^2)/cos(pi/4)^3;
   
 end
 
-fprintf("<INTEGRA«√O NUM…RICA - REGRA DOS TRAP…ZIOS>\n\n")
-fprintf("Toler‚ncia: %e\n", tol);
+fprintf("<INTEGRA√á√ÉO NUM√âRICA - REGRA DOS TRAP√âZIOS>\n\n")
+fprintf("Toler√¢ncia: %e\n", tol);
 fprintf("Integral exata = %.11f \n", Iexato);
-fprintf("Integral numÈrica = %.11f\nErro de truncamento: %.11f\n\n",soma,ET);
-fprintf("Integral composta = %.11f\nErro |exato-numÈrico| = %.11f\n",Ir,E);
-fprintf("N˙mero de trapÈzios: %i\n", n); 
+fprintf("Integral num√©rica = %.11f\nErro de truncamento: %.11f\n\n",soma,ET);
+fprintf("Integral composta = %.11f\nErro |exato-num√©rico| = %.11f\n",Ir,E);
+fprintf("N√∫mero de trap√©zios: %i\n", n); 
