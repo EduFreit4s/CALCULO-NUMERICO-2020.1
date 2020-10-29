@@ -1,8 +1,8 @@
-% INSTITUTO FEDERAL DA PARAÍBA
-% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA ELÉTRICA
-% CÁLCULO NUMÉRICO 2020.1
-% EQUAÇÕES TRANSCENDENTES E ALGÉBRICAS
-% CALCULO DE RAÍZES - MÉTODO DE NEWTON
+% INSTITUTO FEDERAL DA PARAÃBA
+% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA ELÃ‰TRICA
+% CÃLCULO NUMÃ‰RICO 2020.1
+% EQUAÃ‡Ã•ES TRANSCENDENTES E ALGÃ‰BRICAS
+% CALCULO DE RAÃZES - MÃ‰TODO DE NEWTON
 % AUTOR:  ANTONIO BATISTA E EDUARDO FREITAS
  
 clear all, close all, clc, 
@@ -15,7 +15,7 @@ x(1)=2;
 n=1;
 e(1)=1;
 
-#EQUAÇÃO ALGÉBRICA
+#EQUAÃ‡ÃƒO ALGÃ‰BRICA
  
   % NUMERADOR - x(n-1)^3-2*x(n-1)^2 + 3*x(n-1)-1;
   % DENOMINADOR - 3*x(n-1)^2 - 2*x(n-1) + 3;
@@ -26,9 +26,9 @@ e(1)=1;
 
     #f(a)*f''(a) > 0, x0 = -1*-2 = 2>0, x0 = 0
     #f(b)*f''(b) > 0, x0 = 5*10 = 50 > 0, x0 = 2
-    #Obs: escolhendo o x0 maior, o resultado será mais preciso e vai convergir mais rápido 
+    #Obs: escolhendo o x0 maior, o resultado serÃ¡ mais preciso e vai convergir mais rÃ¡pido 
 
-#EQUAÇÃO TRANSCENDENTE
+#EQUAÃ‡ÃƒO TRANSCENDENTE
 
   % NUMERADOR = x(n-1)*exp(x(n-1))-pi;
   % DENOMINADOR = exp(x(n-1))*(2+x(n-1));
@@ -41,8 +41,8 @@ e(1)=1;
  
 while(e(n)>TOL &&n<=Nmax)
   n=n+1;
-  numerador = x(n-1)*exp(x(n-1))-pi;     % MUDAR EQUAÇÃO AQUI
-  denominador = exp(x(n-1))*(2+x(n-1));  % MUDAR EQUAÇÃO AQUI
+  numerador = x(n-1)*exp(x(n-1))-pi;     % MUDAR EQUAÃ‡ÃƒO AQUI
+  denominador = exp(x(n-1))*(2+x(n-1));  % MUDAR EQUAÃ‡ÃƒO AQUI
   x(n)=x(n-1)- (numerador/denominador);
   e(n)=abs(x(n)-x(n-1));
 end
@@ -50,5 +50,5 @@ X=[(0:length(x)-1)' x' e'];
 disp('   -----------------------------')
 disp(X)
 disp(['   TOL = ' num2str(TOL)]); 
-disp(['   Iteraçöes: ' num2str(n-1)])
+disp(['   IteraÃ§Ã¶es: ' num2str(n-1)])
 disp('   -----------------------------')
