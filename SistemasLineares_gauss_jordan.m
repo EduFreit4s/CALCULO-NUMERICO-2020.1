@@ -1,6 +1,6 @@
 %============================================================== 
-% IFPB, JOÃO PESSOA, 13/09/2020
-% CURSO SUPERIOR DE ENGNEHARIA ELÉTRICA
+% IFPB, JOÃƒO PESSOA, 13/09/2020
+% CURSO SUPERIOR DE ENGNEHARIA ELÃ‰TRICA
 % GAUSS-JORDAN
 % AUTOR: EDUARDO FREITAS E ANTONIO BATISTA
 %==============================================================
@@ -39,9 +39,4 @@ end
 disp('MATRIZ ESCALONADA PELO METODO GAUSS-JORDAN: ');
 A
 pause
-
-  
-
- 
- 
   
