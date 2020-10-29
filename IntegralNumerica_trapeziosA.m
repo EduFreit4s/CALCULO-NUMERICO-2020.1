@@ -1,7 +1,7 @@
-## INSTITUTO FEDERAL DA PARAÕBA
-## CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL…TRICA
-## C¡LCULO NUM…RICO 2020
-## INTEGRA«√O NUM…RICA - REGRA DOS TRAP…ZIOS
+## INSTITUTO FEDERAL DA PARA√çBA
+## CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL√âTRICA
+## C√ÅLCULO NUM√âRICO 2020
+## INTEGRA√á√ÉO NUM√âRICA - REGRA DOS TRAP√âZIOS
 
 clear all, close all, clc, 
 
@@ -30,8 +30,8 @@ ET = -((b-a)^3/(12*n^2))*3/e^2;
 
 Ir=I+ET;
 E=abs(Iexato-Ir);
-disp('<INTEGRA«√O NUM…RICA - REGRA DOS TRAP…ZIOS>')
+disp('<INTEGRA√á√ÉO NUM√âRICA - REGRA DOS TRAP√âZIOS>')
 disp(' ')
 fprintf("Valor exato = %f \n\n", Iexato);
-fprintf("Integral NumÈrica = %f\nErro Truncamento: %f\n\n",I,ET);
-fprintf("NumÈrica+CorreÁ„o = %f\nErro |exato-num| = %f\n\n",Ir,E);
+fprintf("Integral Num√©rica = %f\nErro Truncamento: %f\n\n",I,ET);
+fprintf("Num√©rica+Corre√ß√£o = %f\nErro |exato-num| = %f\n\n",Ir,E);
