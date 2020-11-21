@@ -1,10 +1,10 @@
 % ---------------------------------------------
-% INSTITUTO FEDERAL DA PARAÕBA
-% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL…TRICA
-% DISCIPLINA: C¡LCULO NUM…RICO 2020
-% INTERPOLACAO: M…TODO DE LAGRANGE
-% JO√O PESSOA, 21/11/2020.
-% AUTOR: ANT‘NIO, EDUARDO, GABRIEL E TAYNARA
+% INSTITUTO FEDERAL DA PARA√çBA
+% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL√âTRICA
+% DISCIPLINA: C√ÅLCULO NUM√âRICO 2020
+% EDO: CIRCUITO RLC S√âRIE - RUNGE-KUTTA DE 4¬∞ ORDEM
+% JO√ÉO PESSOA, 21/11/2020.
+% AUTOR: ANT√îNIO, EDUARDO, GABRIEL E TAYNARA
 % ---------------------------------------------
 clear all, close all, clc,
 
@@ -34,13 +34,13 @@ for J=1:M
 end
 X=X.*100;
 
-%SAÕDA GR¡FICA
+%SA√çDA GR√ÅFICA
 a=plot(T,X,'k',T,Y,'r'); set(a,'LineWidth',2);
-title("CIRCUITO RLC S…RIE - Runge-Kutta de 4∞ ordem",'fontsize',20);
+title("CIRCUITO RLC S√âRIE - Runge-Kutta de 4¬∞ ordem",'fontsize',20);
 legend('CARGA','CORRENTE','Location','NorthWest');
 xlabel('TEMPO'), axis([A B 0 100]), grid on
 
-%SAÕDA JANELA DE COMANDO
-fprintf("CIRCUITO RLC S…RIE - Runge-Kutta de 4∞ ordem\n\n");
+%SA√çDA JANELA DE COMANDO
+fprintf("CIRCUITO RLC S√âRIE - Runge-Kutta de 4¬∞ ordem\n\n");
 fprintf("\tTempo\tCarga\tCorrente\n\n");
 disp([T' X' Y']); 
