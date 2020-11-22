@@ -1,9 +1,9 @@
 % ---------------------------------------------
-% INSTITUTO FEDERAL DA PARAÕBA
-% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL…TRICA
-% DISCIPLINA: C¡LCULO NUM…RICO 2020
-% EDO: EXEMPLO 2 - RUNGE-KUTTA DE 2∞ ORDEM
-% JO√O PESSOA, 22/11/2020.
+% INSTITUTO FEDERAL DA PARA√çBA
+% CURSO SUPERIOR DE BACHARELADO EM ENGENHARIA EL√âTRICA
+% DISCIPLINA: C√ÅLCULO NUM√âRICO 2020
+% EDO: EXEMPLO 2 - RUNGE-KUTTA DE 2¬∞ ORDEM
+% JO√ÉO PESSOA, 22/11/2020.
 % AUTOR: JOSE E F BATISTA
 % ---------------------------------------------
 clear all,close all, clc
@@ -22,7 +22,7 @@ for j=1:m
   fprintf("K1=%.6f\tK2=%.6f\tY(j)=%.6f\tX(j)=%.6f\t\n",K1,K2,y(j+1),x(j+1));
 end
 
-fprintf("\t####### EXEMPLO2 - RK2 - EULER MODIFICADO #######\n\n");
+fprintf("\n\t####### EXEMPLO2 - RK2 - EULER MODIFICADO #######\n\n");
 fprintf("\t\ty' = tan(x)+cos(y)\n\t\ty(0) = 1\n\n\t\th = 0.25 e intervalo = [0;1.5]\n\n");
 fprintf("\t\tj\txj\tyj\n\n");
 
